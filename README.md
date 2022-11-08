@@ -1,2 +1,2 @@
-# Bert4XMR
-The official implemention of Bert4XMR.
+# Bert4CMR
+The official implemention of Bert4CMR.
