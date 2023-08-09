@@ -29,8 +29,8 @@ class BERTEmbedding(nn.Module):
 #         print('xavier_uniform_')
 
     def forward(self, sequence, mkts):
-        x = self.token(sequence)
-#         x = self.token(sequence)+self.market_embedding(mkts)
+        # x = self.token(sequence)
+        x = self.token(sequence)+self.market_embedding(mkts)
         x = self.LayerNorm(x)
         x = self.dropout(x)
         return x
