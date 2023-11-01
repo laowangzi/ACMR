@@ -63,9 +63,9 @@ class BERT(nn.Module):
         x = self.transformer_blocks(x, src_key_padding_mask=mask)
         return x
     
-class Bert4XMR(nn.Module):
+class ASCMR(nn.Module):
     def __init__(self, config):
-        super(Bert4XMR, self).__init__()
+        super(ASCMR, self).__init__()
         self.config = config
         self.bert = BERT(config)
         self.out = nn.Linear(2*self.bert.hidden, 1)
