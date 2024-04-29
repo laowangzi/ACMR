@@ -1,0 +1,171 @@
+nohup: ignoring input
+{'tgt_mkt': ['mx'], 'src_mkt': ['de', 'jp', 'ca', 'in', 'fr', 'uk'], 'neg_num': 4, 'patience': 3, 'latent_dim': 32, 'dropout': 0.3, 'lr': 0.001, 'l2_reg': 1e-07, 'num_epoch': 50, 'device': 'cuda:0', 'batch_size': 1024, 'layers': [64, 128, 64, 32], 'latent_dim_mf': 32, 'bert_max_len': 51, 'bert_num_blocks': 4, 'bert_num_heads': 8, 'num_mkts': 7}
+target market: mx
+source market: ['de', 'jp', 'ca', 'in', 'fr', 'uk']
+de: users num=1851, item num=2179, ratings=17300, sparsity=0.0043
+jp: users num=487, item num=955, ratings=4485, sparsity=0.0096
+ca: users num=4668, item num=5735, ratings=44779, sparsity=0.0017
+in: users num=239, item num=470, ratings=2015, sparsity=0.0179
+fr: users num=1838, item num=1879, ratings=17624, sparsity=0.0051
+uk: users num=3352, item num=3251, ratings=31547, sparsity=0.0029
+mx: users num=1878, item num=1645, ratings=17095, sparsity=0.0055
+mean seq length: 9
+min seq length: 5
+max seq length: 88
+epoch 1 start!
+valid: recall@5: 0.5405, recall@10: 0.6209, ndcg@5: 0.4926, ndcg@10: 0.5184, 
+best model save at ./checkpoint/ACMR_mx_pretrain.pt
+train time 176s
+------------------------------------------------------------------------------------------
+epoch 2 start!
+valid: recall@5: 0.655, recall@10: 0.7348, ndcg@5: 0.5668, ndcg@10: 0.5926, 
+best model save at ./checkpoint/ACMR_mx_pretrain.pt
+train time 177s
+------------------------------------------------------------------------------------------
+epoch 3 start!
+valid: recall@5: 0.6922, recall@10: 0.7551, ndcg@5: 0.5928, ndcg@10: 0.6132, 
+best model save at ./checkpoint/ACMR_mx_pretrain.pt
+train time 179s
+------------------------------------------------------------------------------------------
+epoch 4 start!
+valid: recall@5: 0.7029, recall@10: 0.7694, ndcg@5: 0.6127, ndcg@10: 0.6345, 
+best model save at ./checkpoint/ACMR_mx_pretrain.pt
+train time 175s
+------------------------------------------------------------------------------------------
+epoch 5 start!
+valid: recall@5: 0.7098, recall@10: 0.7764, ndcg@5: 0.6194, ndcg@10: 0.641, 
+best model save at ./checkpoint/ACMR_mx_pretrain.pt
+train time 171s
+------------------------------------------------------------------------------------------
+epoch 6 start!
+valid: recall@5: 0.7135, recall@10: 0.779, ndcg@5: 0.6238, ndcg@10: 0.6452, 
+best model save at ./checkpoint/ACMR_mx_pretrain.pt
+train time 166s
+------------------------------------------------------------------------------------------
+epoch 7 start!
+valid: recall@5: 0.7087, recall@10: 0.7833, ndcg@5: 0.6318, ndcg@10: 0.6559, 
+best model save at ./checkpoint/ACMR_mx_pretrain.pt
+train time 176s
+------------------------------------------------------------------------------------------
+epoch 8 start!
+valid: recall@5: 0.7188, recall@10: 0.7849, ndcg@5: 0.6387, ndcg@10: 0.6601, 
+best model save at ./checkpoint/ACMR_mx_pretrain.pt
+train time 184s
+------------------------------------------------------------------------------------------
+epoch 9 start!
+valid: recall@5: 0.7231, recall@10: 0.7886, ndcg@5: 0.6445, ndcg@10: 0.6657, 
+best model save at ./checkpoint/ACMR_mx_pretrain.pt
+train time 176s
+------------------------------------------------------------------------------------------
+epoch 10 start!
+valid: recall@5: 0.7146, recall@10: 0.7881, ndcg@5: 0.6443, ndcg@10: 0.6682, 
+train time 175s
+------------------------------------------------------------------------------------------
+epoch 11 start!
+valid: recall@5: 0.7268, recall@10: 0.7923, ndcg@5: 0.6529, ndcg@10: 0.6743, 
+best model save at ./checkpoint/ACMR_mx_pretrain.pt
+train time 170s
+------------------------------------------------------------------------------------------
+epoch 12 start!
+valid: recall@5: 0.7338, recall@10: 0.7923, ndcg@5: 0.6621, ndcg@10: 0.6809, 
+best model save at ./checkpoint/ACMR_mx_pretrain.pt
+train time 178s
+------------------------------------------------------------------------------------------
+epoch 13 start!
+valid: recall@5: 0.7311, recall@10: 0.7982, ndcg@5: 0.6614, ndcg@10: 0.6831, 
+train time 157s
+------------------------------------------------------------------------------------------
+epoch 14 start!
+valid: recall@5: 0.7316, recall@10: 0.7977, ndcg@5: 0.666, ndcg@10: 0.6873, 
+best model save at ./checkpoint/ACMR_mx_pretrain.pt
+train time 133s
+------------------------------------------------------------------------------------------
+epoch 15 start!
+valid: recall@5: 0.7284, recall@10: 0.7939, ndcg@5: 0.6632, ndcg@10: 0.6845, 
+load model from: ./checkpoint/ACMR_mx_pretrain.pt
+test: recall@5: 0.7194, recall@10: 0.7923, ndcg@5: 0.6496, ndcg@10: 0.6731, 
+mean seq length: 7
+min seq length: 5
+max seq length: 51
+epoch 1 start!
+valid: recall@5: 0.7529, recall@10: 0.8147, ndcg@5: 0.6869, ndcg@10: 0.7066, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 40s
+------------------------------------------------------------------------------------------
+epoch 2 start!
+valid: recall@5: 0.7599, recall@10: 0.8195, ndcg@5: 0.6946, ndcg@10: 0.7138, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 36s
+------------------------------------------------------------------------------------------
+epoch 3 start!
+valid: recall@5: 0.7625, recall@10: 0.8253, ndcg@5: 0.6964, ndcg@10: 0.7168, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 40s
+------------------------------------------------------------------------------------------
+epoch 4 start!
+valid: recall@5: 0.7684, recall@10: 0.8296, ndcg@5: 0.699, ndcg@10: 0.7189, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 42s
+------------------------------------------------------------------------------------------
+epoch 5 start!
+valid: recall@5: 0.7774, recall@10: 0.8339, ndcg@5: 0.7083, ndcg@10: 0.7264, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 43s
+------------------------------------------------------------------------------------------
+epoch 6 start!
+valid: recall@5: 0.7774, recall@10: 0.8381, ndcg@5: 0.7121, ndcg@10: 0.7318, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 36s
+------------------------------------------------------------------------------------------
+epoch 7 start!
+valid: recall@5: 0.7812, recall@10: 0.8435, ndcg@5: 0.7133, ndcg@10: 0.7334, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 35s
+------------------------------------------------------------------------------------------
+epoch 8 start!
+valid: recall@5: 0.7902, recall@10: 0.8461, ndcg@5: 0.7178, ndcg@10: 0.7359, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 41s
+------------------------------------------------------------------------------------------
+epoch 9 start!
+valid: recall@5: 0.7891, recall@10: 0.852, ndcg@5: 0.7195, ndcg@10: 0.7399, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 43s
+------------------------------------------------------------------------------------------
+epoch 10 start!
+valid: recall@5: 0.7918, recall@10: 0.8541, ndcg@5: 0.7213, ndcg@10: 0.7414, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 32s
+------------------------------------------------------------------------------------------
+epoch 11 start!
+valid: recall@5: 0.7961, recall@10: 0.8594, ndcg@5: 0.7238, ndcg@10: 0.7441, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 27s
+------------------------------------------------------------------------------------------
+epoch 12 start!
+valid: recall@5: 0.7966, recall@10: 0.8573, ndcg@5: 0.7229, ndcg@10: 0.7425, 
+train time 34s
+------------------------------------------------------------------------------------------
+epoch 13 start!
+valid: recall@5: 0.803, recall@10: 0.8616, ndcg@5: 0.7275, ndcg@10: 0.7466, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 37s
+------------------------------------------------------------------------------------------
+epoch 14 start!
+valid: recall@5: 0.7982, recall@10: 0.8605, ndcg@5: 0.7281, ndcg@10: 0.7484, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 33s
+------------------------------------------------------------------------------------------
+epoch 15 start!
+valid: recall@5: 0.804, recall@10: 0.8637, ndcg@5: 0.7327, ndcg@10: 0.7522, 
+best model save at ./checkpoint/ACMR_mx_finetune.pt
+train time 32s
+------------------------------------------------------------------------------------------
+epoch 16 start!
+valid: recall@5: 0.8019, recall@10: 0.8658, ndcg@5: 0.731, ndcg@10: 0.7517, 
+train time 35s
+------------------------------------------------------------------------------------------
+epoch 17 start!
+valid: recall@5: 0.803, recall@10: 0.8658, ndcg@5: 0.7276, ndcg@10: 0.7482, 
+load model from: ./checkpoint/ACMR_mx_finetune.pt
+test: recall@5: 0.7822, recall@10: 0.8482, ndcg@5: 0.7118, ndcg@10: 0.7334, 
