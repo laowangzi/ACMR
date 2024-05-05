@@ -9,13 +9,16 @@ We introduce a novel attention based model that exploits users’ historical beh
 ## Citation 
 If you want to use our codes and datasets in your research, please cite:
 ```
-@article{hu2024enhancing,
-  title={Enhancing cross-market recommendations by addressing negative transfer and leveraging item co-occurrences},
-  author={Hu, Zheng and Nakagawa, Satoshi and Cai, Shi-Min and Ren, Fuji and Deng, Jiawen},
-  journal={Information Systems},
-  pages={102388},
-  year={2024},
-  publisher={Elsevier}
+@article{HU2024102388,
+title = {Enhancing cross-market recommendations by addressing negative transfer and leveraging item co-occurrences},
+journal = {Information Systems},
+volume = {124},
+pages = {102388},
+year = {2024},
+issn = {0306-4379},
+doi = {https://doi.org/10.1016/j.is.2024.102388},
+author = {Zheng Hu and Satoshi Nakagawa and Shi-Min Cai and Fuji Ren and Jiawen Deng},
+keywords = {Recommender systems, Cross-market recommendation, Transfer learning}
 }
 ```
 ## Environment Requirement
